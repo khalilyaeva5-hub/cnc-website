@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Электрооборудование CNC & Oydin</title>
+  <style>
+    :root { --red:#E30613; --dark:#111; --light:#1a1a1a; --text:#eee; }
+    body { margin:0; font-family:Arial, sans-serif; color:var(--text); background:var(--dark); line-height:1.6; }
+    h1,h2,h3 { margin:0 0 16px; font-weight:700; }
+    h2 { font-size:24px; color:var(--red); }
+    p { margin:0 0 12px; }
+    a { color:var(--red); text-decoration:none; }
+
+    header { position:relative; text-align:center; color:white; }
+    .hero { width:100%; height:80vh; object-fit:cover; display:block; }
+    .hero-overlay { position:absolute; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.55); display:flex; flex-direction:column; justify-content:center; align-items:center; animation:fadeIn 1.5s ease forwards; }
+    .hero-overlay img { width:140px; margin-bottom:16px; opacity:0; animation:fadeUp 1s ease 0.3s forwards; }
+    .hero-overlay h1 { font-size:32px; margin-bottom:10px; opacity:0; animation:fadeUp 1s ease 0.6s forwards; }
+    .hero-overlay p { font-size:18px; opacity:0; animation:fadeUp 1s ease 0.9s forwards; }
+
+    section { padding:60px 20px; max-width:1000px; margin:0 auto; opacity:0; transform:translateY(40px); transition:all 0.8s ease; }
+    section.visible { opacity:1; transform:translateY(0); }
+
+    .about { background:var(--light); text-align:center; border-radius:12px; padding:40px; }
+
+    .gallery { display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:16px; }
+    .gallery img { width:100%; border-radius:8px; box-shadow:0 4px 12px rgba(0,0,0,0.6); transition:transform 0.3s ease; }
+    .gallery img:hover { transform:scale(1.05); }
+
+    .faq { background:var(--light); border-radius:12px; padding:40px; }
+    .faq-item { margin-bottom:18px; }
+    .faq-item h3 { font-size:18px; color:var(--red); margin-bottom:6px; }
+
+    .contacts { text-align:center; background:var(--light); border-radius:12px; padding:40px; }
+    .buttons { display:flex; flex-direction:column; gap:14px; align-items:center; margin-top:20px; }
+    .btn { display:flex; align-items:center; gap:10px; justify-content:center; width:100%; max-width:300px; padding:12px 16px; border-radius:8px; background:var(--red); color:white; text-decoration:none; font-weight:600; transition:0.2s; }
+    .btn:hover { background:#c2050f; transform:translateY(-3px); }
+    .btn img { width:20px; height:20px; }
+
+    footer { text-align:center; padding:20px; font-size:13px; color:#aaa; }
+
+    /* Анимации */
+    @keyframes fadeUp { from{opacity:0; transform:translateY(30px);} to{opacity:1; transform:translateY(0);} }
+    @keyframes fadeIn { from{opacity:0;} to{opacity:1;} }
+  </style>
+</head>
+<body>
+  <header>
+    <img class="hero" src="Axis7-Series-–-Low-Brekaer-Product.webp" alt="CNC Axis7 Banner">
+    <div class="hero-overlay">
+      <h1>ВСЁ ДЛЯ НАДЁЖНОЙ ЭЛЕКТРИКИ</h1>
+      <p>CNC Electric • Oydin Electric</p>
+    </div>
+  </header>
+
+  <section class="about">
+    <h2>О нас</h2>
+    <p>Мы предлагаем качественное электрооборудование для дома и бизнеса. В нашем ассортименте — автоматы, кабели, светильники и многое другое. Работаем напрямую с производителями и доставляем по всему Узбекистану.</p>
+  </section>
+
+  <section class="products">
+    <h2>Фото продуктов</h2>
+    <div class="gallery"
+      <img src="product2.jpg" alt="Продукт 2">
+      <img src="product3.jpg" alt="Продукт 3">
+      <img src="product4.jpg" alt="Продукт 4">
+      <img src="product5.jpg" alt="Продукт 5">
+    </div>
+  </section>
+
+  <section class="faq">
+    <h2>Частые вопросы</h2>
+    <div class="faq-item">
+      <h3>Как оформить заказ?</h3>
+      <p>Вы можете связаться с нами через Telegram, Instagram или по телефону. Мы быстро оформим и доставим заказ.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Есть ли доставка по регионам?</h3>
+      <p>Да, мы доставляем продукцию во все регионы Узбекистана.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Можно ли получить консультацию?</h3>
+      <p>Наши специалисты помогут вам подобрать оборудование под ваши нужды.</p>
+    </div>
+  </section>
+
+  <section class="contacts">
+    <h2>Контакты</h2>
+    <div class="buttons">
+      <a class="btn" href="https://t.me/+1yujlefPbTthMWJi" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png" alt="tg"> Каталог в Telegram
+      </a>
+      <a class="btn" href="tel:+998932652858">
+        <img src="https://cdn-icons-png.flaticon.com/512/724/724664.png" alt="phone"> Позвонить
+      </a>
+      <a class="btn" href="https://www.instagram.com/namangan_cnc/" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="ig"> Instagram
+      </a>
+      <a class="btn" href="https://yandex.uz/maps/21314/namangan/?ll=71.646787%2C41.017655&mode=poi&poi%5Bpoint%5D=71.645743%2C41.017851&poi%5Buri%5D=ymapsbm1%3A%2F%2Forg%3Foid%3D234702056360&z=17" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/684/684908.png" alt="map"> Найти на карте
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Электрооборудование </p>
+  </footer>
+
+  <script>
+    // Анимация появления секций при скролле
+    const sections = document.querySelectorAll('section');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.2 });
+
+    sections.forEach(section => {
+      observer.observe(section);
+    });
+  </script>
+</body>
+</html>
